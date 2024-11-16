@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporada 1 de Arcane</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="imagex/png" href="./images/icon.ico">
+    <script>
+        // Exibe um aviso ao carregar a página
+        window.onload = function() {
+            alert("Atenção: Este site contém spoilers da série Arcane. Se você ainda não assistiu, prossiga por sua conta e risco!");
+        };
+    </script>
+</head>
+<body>
+
+    <!-- Menu de navegação -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="temporada1.html">Temporada 1</a></li>
+            <li><a href="temporada2.html">Temporada 2</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Temporada 1 de Arcane</h1>
+        <p>A primeira temporada de Arcane explora a origem das irmãs Vi e Jinx e o início da separação entre os destinos delas, ambientada nas cidades de Piltover e Zaun.</p>
+    </header>
+
+    <section>
+        <h2>Resumo</h2>
+        <p>A primeira temporada é dividida em três atos, mostrando como a amizade de Vi e Jinx é destruída pelo poder, a desigualdade social entre as cidades de Piltover e Zaun, e a ascensão de novos vilões como Silco. A temporada foca nas complexas relações entre os personagens, com destaque para as irmãs e sua luta pelo controle de suas próprias vidas.</p>
+    </section>
+
+    <section>
+        <div class="imagens">
+              <div class="imagens-item"><img src="images/imagem2.png" ></div>
+              <div class="imagens-item"><img src="images/imagem3.png" ></div>
+              <div class="imagens-item"><img src="images/imagem4.png" ></div>
+          </div>
+    </section>
+
+    <section><div class="form-container">
+        <h3>Questionário sobre Arcane</h1>
+        <form action="#" method="POST">
+            <!-- Pergunta 1 -->
+            <div class="form-group">
+                <label>Qual personagem você considera o mais importante da série?</label>
+                <div class="options">
+                    <input type="radio" id="vi" name="personagem_importante" value="Vi">
+                    <label for="vi">Vi</label>
+                    <input type="radio" id="jinx" name="personagem_importante" value="Jinx">
+                    <label for="jinx">Jinx</label>
+                    <input type="radio" id="caitlyn" name="personagem_importante" value="Caitlyn">
+                    <label for="caitlyn">Caitlyn</label>
+                    <input type="radio" id="jayce" name="personagem_importante" value="Jayce">
+                    <label for="jayce">Jayce</label>
+                    <input type="radio" id="outros" name="personagem_importante" value="Outros">
+                    <label for="outros">Outros</label>
+                </div>
+            </div>
+
+            <!-- Pergunta 2 -->
+            <div class="form-group">
+                <label>Qual personagem teve a melhor evolução ao longo da série?</label>
+                <div class="options">
+                    <input type="radio" id="evolucao-vi" name="melhor_evolucao" value="Vi">
+                    <label for="evolucao-vi">Vi</label>
+                    <input type="radio" id="evolucao-jinx" name="melhor_evolucao" value="Jinx">
+                    <label for="evolucao-jinx">Jinx</label>
+                    <input type="radio" id="viktor" name="melhor_evolucao" value="Viktor">
+                    <label for="viktor">Viktor</label>
+                    <input type="radio" id="silco" name="melhor_evolucao" value="Silco">
+                    <label for="silco">Silco</label>
+                    <input type="radio" id="evolucao-outros" name="melhor_evolucao" value="Outros">
+                    <label for="evolucao-outros">Outros</label>
+                </div>
+            </div>
+
+            <!-- Pergunta 3 -->
+            <div class="form-group">
+                <label>Qual relação entre os personagens é a mais marcante para você?</label>
+                <div class="options">
+                    <input type="radio" id="vi-jinx" name="relacao" value="Vi e Jinx">
+                    <label for="vi-jinx">Vi e Jinx</label>
+                    <input type="radio" id="jayce-viktor" name="relacao" value="Jayce e Viktor">
+                    <label for="jayce-viktor">Jayce e Viktor</label>
+                    <input type="radio" id="caitlyn-vi" name="relacao" value="Caitlyn e Vi">
+                    <label for="caitlyn-vi">Caitlyn e Vi</label>
+                    <input type="radio" id="silco-jinx" name="relacao" value="Silco e Jinx">
+                    <label for="silco-jinx">Silco e Jinx</label>
+                    <input type="radio" id="relacao-outros" name="relacao" value="Outros">
+                    <label for="relacao-outros">Outros</label>
+                </div>
+            </div>
+
+            <!-- Pergunta 4 -->
+            <div class="form-group">
+                <label>Em qual local de Arcane você gostaria de viver?</label>
+                <div class="options">
+                    <input type="radio" id="piltover" name="local" value="Piltover">
+                    <label for="piltover">Piltover</label>
+                    <input type="radio" id="zaun" name="local" value="Zaun">
+                    <label for="zaun">Zaun</label>
+                    <input type="radio" id="local-outro" name="local" value="Outro">
+                    <label for="local-outro">Outro</label>
+                </div>
+            </div>
+
+            <!-- Pergunta 5 -->
+            <div class="form-group">
+                <label>Qual foi a cena mais emocionante para você?</label>
+                <div class="options">
+                    <input type="radio" id="luta-final" name="cena" value="Cena de luta final entre Vi e Jinx">
+                    <label for="luta-final">Cena de luta final entre Vi e Jinx</label>
+                    <input type="radio" id="transformacao-viktor" name="cena" value="Cena da transformação de Viktor">
+                    <label for="transformacao-viktor">Cena da transformação de Viktor</label>
+                    <input type="radio" id="decisao-jayce" name="cena" value="Cena da decisão de Jayce sobre Zaun">
+                    <label for="decisao-jayce">Cena da decisão de Jayce sobre Zaun</label>
+                    <input type="radio" id="outra-cena" name="cena" value="Outra">
+                    <label for="outra-cena">Outra</label>
+                </div>
+            </div>
+
+            <!-- Botão de Envio -->
+            <button type="submit" class="submit-button">Enviar Respostas</button>
+        </form>
+    </div></section>
+    <section>
+        <h2>Assista à primeira temporada</h2>
+        <p>A primeira temporada está disponível na Netflix. <a href="https://www.netflix.com/br/title/81435684">Confira agora!</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Arcane Fan Site</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

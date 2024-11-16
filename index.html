@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arcane - Uma história de League of Legends</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="imagex/png" href="./images/icon.ico">
 </head>
 <body>
 
@@ -31,10 +32,92 @@
         <img src="images/imagem1.png" alt="Personagens de Arcane" >
     </section>
     <hr />
+    
     <section id="trailer">
         <h3>Assista ao trailer oficial</h3>
         <div class="video">
             <iframe width="720" height="460" src="https://www.youtube.com/embed/3MB3OK3Xnvs?si=VhPIz_cyEmAypqXg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+    <hr />
+    
+    <section>
+        <div class="form-container">
+            <h3>Opinião Geral sobre Arcane</h1>
+            <form action="#" method="POST">
+                <!-- Pergunta 1 -->
+                <div class="form-group">
+                    <label>Você já conhecia o universo de League of Legends antes de assistir a Arcane?</label>
+                    <div class="options">
+                        <input type="radio" id="conhecia-sim" name="conhecia_lol" value="Sim">
+                        <label for="conhecia-sim">Sim</label>
+                        <input type="radio" id="conhecia-nao" name="conhecia_lol" value="Não">
+                        <label for="conhecia-nao">Não</label>
+                    </div>
+                </div>
+    
+                <!-- Pergunta 2 -->
+                <div class="form-group">
+                    <label>Como você classificaria a animação de Arcane?</label>
+                    <div class="options">
+                        <input type="radio" id="animacao-excelente" name="classificacao_animacao" value="Excelente">
+                        <label for="animacao-excelente">Excelente</label>
+                        <input type="radio" id="animacao-boa" name="classificacao_animacao" value="Boa">
+                        <label for="animacao-boa">Boa</label>
+                        <input type="radio" id="animacao-regular" name="classificacao_animacao" value="Regular">
+                        <label for="animacao-regular">Regular</label>
+                        <input type="radio" id="animacao-ruim" name="classificacao_animacao" value="Ruim">
+                        <label for="animacao-ruim">Ruim</label>
+                    </div>
+                </div>
+    
+                <!-- Pergunta 3 -->
+                <div class="form-group">
+                    <label>A narrativa da série foi satisfatória para você?</label>
+                    <div class="options">
+                        <input type="radio" id="narrativa-muito" name="satisfacao_narrativa" value="Muito satisfatória">
+                        <label for="narrativa-muito">Muito satisfatória</label>
+                        <input type="radio" id="narrativa-satisfatoria" name="satisfacao_narrativa" value="Satisfatória">
+                        <label for="narrativa-satisfatoria">Satisfatória</label>
+                        <input type="radio" id="narrativa-neutra" name="satisfacao_narrativa" value="Neutra">
+                        <label for="narrativa-neutra">Neutra</label>
+                        <input type="radio" id="narrativa-insatisfatoria" name="satisfacao_narrativa" value="Insatisfatória">
+                        <label for="narrativa-insatisfatoria">Insatisfatória</label>
+                    </div>
+                </div>
+    
+                <!-- Pergunta 4 -->
+                <div class="form-group">
+                    <label>Você gostaria de ver uma continuação para Arcane?</label>
+                    <div class="options">
+                        <input type="radio" id="continua-sim" name="continua_arcane" value="Sim">
+                        <label for="continua-sim">Sim</label>
+                        <input type="radio" id="continua-nao" name="continua_arcane" value="Não">
+                        <label for="continua-nao">Não</label>
+                    </div>
+                </div>
+    
+                <!-- Pergunta 5 -->
+                <div class="form-group">
+                    <label>Qual é a sua nota geral para a série de 1 a 10?</label>
+                    <select id="nota_geral" name="nota_geral">
+                        <option value="" disabled selected>Selecione uma nota</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+    
+                <!-- Botão de Envio -->
+                <button type="submit" class="submit-button">Enviar Respostas</button>
+            </form>
         </div>
     </section>
     <footer>

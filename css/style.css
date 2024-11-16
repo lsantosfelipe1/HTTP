@@ -1,4 +1,4 @@
-
+/*Importa a fonte utilizada*/
 @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Resetando margens e paddings */
@@ -6,17 +6,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
   
   /* Estilo do corpo da página */
-  body {
+body {
     font-family: "Sour Gummy", sans-serif;
     line-height: 1.6;
     padding-top: 60px; /* Evitar que o menu sobreponha o conteúdo */
-  }
-  
-  /* Estilo do menu fixo */
-  nav {
+}
+
+/* Estilo do menu fixo */
+nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -24,50 +24,51 @@
     background-color: #0F5C8B;
     z-index: 1000;
     padding: 10px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
+    box-shadow: 0 4px 6px #0000001a;
+}
   
   /* Estilo da lista de navegação */
-  nav ul {
+nav ul {
     list-style: none;
     text-align: center;
-  }
+}
   
   /* Estilo dos itens do menu */
-  nav ul li {
+nav ul li {
     display: inline-block;
     margin: 0 20px;
-  }
+}
   
   /* Estilo dos links do menu */
-  nav ul li a {
+nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 18px;
     padding: 10px 15px;
     display: inline-block;
     transition: all 0.3s ease;
-  }
+}
   
   /* Efeito de animação no hover */
-  nav ul li a:hover {
+nav ul li a:hover {
     background-color: #679aca;
     transform: scale(1.1);
     border-radius: 5%;
-    color: #14336F; /* Cor ao passar o mouse */
-  }
+    color: #14336F; 
+}
   
   /* Estilo do header */
-  header {
+header {
+    font-size: 1.25em;
     text-align: center;
     padding: 20px 20px 20px 20px; /* Ajustando o espaçamento para evitar sobreposição */
     background-color: #f4f4f4;
-  }
+}
 
-  hr{
+hr{
     border-color:#0F5C8B;
     width:100%;  
-  }
+}
 
 div.video{
     background-color: #f4f4f4;
@@ -79,11 +80,13 @@ div.video > iframe{
     left: 25%;
     width: 50%;
     height: 100%;
-    padding-bottom: 10px;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
 }
   
   /* Estilo das seções */
   section {
+    font-size: 1.25em;
     background-color: #f4f4f4;
     padding: 20px;
   }
@@ -98,6 +101,124 @@ div.video > iframe{
     max-width: 100%;
     height: auto;
   }
+
+  .imagens{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    margin-left: 10px;
+    width: 100%;
+  }
+
+.imagens-item img{
+    display: inline-block;
+    width: 85%;
+}
+
+/* Estilo do formulário */
+
+.form-container {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  justify-content: center;
+}
+
+h3 {
+  text-align: center;
+  color: #333333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #555555;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.options input[type="radio"] {
+  margin-right: 5px;
+}
+
+button.submit-button {
+  background: #0F5C8B;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+button.submit-button:hover {
+  background: #14336F;
+}
+
+/* Contêiner da tabela */
+.table-container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Estilo da tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Cabeçalho da tabela */
+thead th {
+  background-color: #0F5C8B;
+  color: #f5f5f5;
+  padding: 12px;
+  text-align: left;
+  font-size: 0.95rem;
+  border-bottom: 2px solid #444444;
+}
+
+/* Corpo da tabela */
+tbody td {
+  padding: 10px;
+  text-align: left;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #444444;
+}
+
+/* Última linha sem borda */
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Alternar cores das linhas */
+tbody tr:nth-child(even) {
+  background-color: #2a2a2a;
+}
+
+/* Linha ao passar o mouse */
+tbody tr:hover {
+  background-color: #444444;
+  transition: background-color 0.3s;
+}
   /* Estilo do footer */
   footer {
     text-align: center;
